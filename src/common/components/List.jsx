@@ -1,9 +1,9 @@
 import React from 'react';
 import ListItem from './ListItem';
 
-export default function List({ list, scale, isCheckable, setList }) {
+const List = ({ list, scale, isCheckable, setList }) => {
     return (
-        <ul>
+        <ul data-testid={`${scale}-list`}>
             {list.map((item) => item.scale === scale && (
                 <ListItem
                     id={item.id}
@@ -11,8 +11,12 @@ export default function List({ list, scale, isCheckable, setList }) {
                     isCheckable={isCheckable}
                     setList={setList}
                     list={list}
+                    scale={scale}
+                    key={item.id}
                 />
             ))}
         </ul>
     )
 }
+
+export default List;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering Test should renders the component [snapshot] 1`] = `
+<form
+  className="form col-md-10"
+  onSubmit={[Function]}
+>
+  <input
+    data-testid="input-field"
+    onChange={[Function]}
+    placeholder="Add a task..."
+    type="text"
+    value=""
+  />
+</form>
+`;

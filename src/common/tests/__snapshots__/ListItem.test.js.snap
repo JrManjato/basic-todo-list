@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem Test should renders the component [snapshot] 1`] = `
+<li>
+  <input
+    data-testid="checkbox"
+    id={true}
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    htmlFor={true}
+  />
+</li>
+`;
